@@ -1,0 +1,202 @@
+.wrapper {
+  display: flex;
+  padding-top: 92px;
+  padding-bottom: 92px;
+
+  .userInfo {
+    width: fit-content;
+    padding: 30px 13px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+    box-shadow: 0px -41px 46px -1px rgba(45, 118, 89, 0.25);
+
+    .options {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-left: 43px;
+      padding-right: 85px;
+      padding-bottom: 27px;
+
+      .optionItem {
+        width: 192px;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding: 15px 19px;
+        filter: brightness(0) saturate(100%) invert(64%) sepia(5%);
+        font-weight: 400;
+        font-size: 16px;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .optionItem:hover {
+        cursor: pointer;
+      }
+
+      .activeOption {
+        display: flex;
+        align-items: center;
+        padding: 15px 19px;
+        border-radius: 30px;
+        background-color: #2d7659;
+        color: white;
+        gap: 13px;
+
+        img {
+          width: 24px;
+          height: 24px;
+          filter: brightness(0) saturate(100%) invert(100%) sepia(3%);
+        }
+      }
+    }
+
+    .userMoneyInfo {
+      display: flex;
+      flex-direction: column;
+      padding: 22px;
+      border-radius: 18px;
+      border: 1.5px solid #2d7659;
+      background-color: #f4fefa;
+      font-weight: 400;
+
+      .topInfo {
+        display: flex;
+        gap: 19px;
+
+        .userBalance {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          height: 64px;
+          background-color: #2d7659;
+          border-radius: 12px;
+          border: 1px solid #0fec9480;
+          color: white;
+          padding: 13px;
+          box-sizing: border-box;
+
+          .title {
+            font-size: 10px;
+            font-weight: 400;
+          }
+
+          .balanceSum {
+            font-size: 20px;
+            font-weight: 500;
+
+            span {
+              font-size: 10px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      .bottomInfo {
+        .userName {
+          font-size: 10px;
+          margin-top: 5px;
+          opacity: 0.8;
+        }
+
+        .userPhone {
+          font-size: 7px;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .balanceInternational {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #2d7659;
+      border-radius: 12px;
+      margin-top: 10px;
+      padding: 10px;
+
+      .balanceItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        gap: 6px;
+
+        .top {
+          display: flex;
+          gap: 5px;
+
+          p {
+            font-size: 10px;
+            font-weight: 400;
+            opacity: 0.5;
+          }
+        }
+
+        .sum {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      .balanceItem:nth-child(2) {
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+      }
+    }
+
+    .moneyStatistic {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+      gap: 26px;
+
+      .withdrawal {
+        flex: 1;
+        padding: 9px 12px;
+        border-radius: 12px;
+        background-color: rgba(252, 244, 229, 0.5);
+        border: 1px solid rgba(245, 179, 101, 0.5);
+      }
+
+      .deposit {
+        flex: 1;
+        padding: 9px 12px;
+        border-radius: 12px;
+        background-color: rgba(223, 255, 242, 0.5);
+        border: 1px solid rgba(45, 118, 89, 0.5);
+      }
+
+      .titleInfo {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 16px;
+
+        p {
+          font-size: 10px;
+          font-weight: 400;
+        }
+      }
+
+      .currencyStat {
+        font-size: 10px;
+        opacity: 0.5;
+        margin-bottom: 3px;
+      }
+
+      .currencyCountStat {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .transactionContainer {
+    flex: 1;
+  }
+}
